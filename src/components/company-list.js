@@ -12,7 +12,6 @@ export default function Companies(props){
         </div>
 
     )
-
 }
 
 function mapCompanies(companies, state, criteria){

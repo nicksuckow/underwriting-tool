@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <div className="options">
         <StateSelector updateState={setState} />
-        <Criteria criteria={criteria} setCriteria={setCriteria} />
+        <Criteria setCriteria={setCriteria} />
       </div>
       <Companies state={state} criteria={criteria} />
     </div>

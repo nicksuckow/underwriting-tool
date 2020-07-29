@@ -1,11 +1,15 @@
 import React from 'react';
 import TextField from '@material-ui/core/TextField';
 import Autocomplete from '@material-ui/lab/Autocomplete';
-import {medications} from '../config/criteria-config';
-export default function Criteria({criteria, setCriteria}){
+import {criteriaConfig} from '../config/criteria-config';
+
+export default function Criteria({setCriteria}){
+
     return <Autocomplete multiple
         id="combo-box-demo"
-        options={Object.values(medications)}
+        options={Object.values(criteriaConfig)}
+        getOptionLabel={(option) => option.name }
+        groupBy={(option) => option.type}
         onChange={(event, newValue) => {
             setCriteria(newValue)
             }
