@@ -1,18 +1,14 @@
 import React from 'react';
+import TextField from '@material-ui/core/TextField';
+import Autocomplete from '@material-ui/lab/Autocomplete';
+import States from '../config/states';
 
-export default function State(props){
-    const updateState = props.updateState;
-
-    return(
-        <div>
-            <label htmlFor='state'>State: </label>
-            <select id='state' onChange={(e) => updateState(e.target.value)}>
-            <option>Iowa</option>
-            <option>Missouri</option>
-            <option>Illinois</option>
-            <option>Kansas</option>
-            <option>Nebraska</option>
-            </select>
-        </div>
-    )
+export default function StateSelector({updateState}){
+    return <Autocomplete
+        id="combo-box-demo"
+        options={States}
+        style={{ width: 300 }}
+        onChange={(event, newValue) => updateState(newValue)}
+        renderInput={(params) => <TextField {...params} label="States" variant="outlined" />}
+    />
 }

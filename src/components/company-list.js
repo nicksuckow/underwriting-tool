@@ -1,14 +1,14 @@
 import React from 'react';
 import companies from '../config/companies';
 import Company from './company';
+import { List } from '@material-ui/core';
 
 export default function Companies(props){
     return(
         <div>
-            <ul>
+            <List>
                 {mapCompanies(companies, props.state, props.criteria)}
-            </ul>
-
+            </List>
         </div>
 
     )

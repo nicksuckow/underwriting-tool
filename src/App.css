@@ -1,6 +1,19 @@
 .App {
   text-align: center;
+  width: 1000px;
+  margin: 20px auto;
+  border: 1px solid #cecece;
+  padding: 20px;
+  border-radius: 5px;
 }
+
+.options {
+  display:flex;
+  justify-content: space-around;
+  border-bottom: 1px solid #cecece;
+  padding: 15px 0px;
+}
+
 
 .red {
   color: red;
