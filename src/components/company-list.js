@@ -1,5 +1,6 @@
 import React from 'react';
-import companies from './config/companies';
+import companies from '../config/companies';
+import Company from './company';
 
 export default function Companies(props){
     return(
@@ -16,8 +17,6 @@ export default function Companies(props){
 
 function mapCompanies(companies, state, medication){
     return companies.map(company => {
-        console.log('selected Medication: ', medication)
-        if(company.deniedStates.includes(state) || company.medication.includes(medication)) return <li className='red'>{company.name}</li>
-        return <li>{company.name}</li>
+        return <Company key={company.name} company={company} medication={medication} state={state} /> 
     })
 }
