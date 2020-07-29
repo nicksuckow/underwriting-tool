@@ -1,24 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useState} from 'react';
 import './App.css';
+import State from './components/state-selector';
+import Companies from './components/company-list'
 
 function App() {
+  const [state, setState] = useState('Iowa');
+  const [medication, setMedication] = useState(''); 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <State updateState={setState}></State>
+      <input type="text" value={medication} onChange={(event) => setMedication(event.target.value)}/>
+      <Companies state={state} medication={medication}></Companies>
     </div>
   );
 }
