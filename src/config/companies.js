@@ -1,24 +1,25 @@
+import {medications} from './criteria-config';
 export default  [
     {
         name: 'Wellmark',
         deniedStates: [],
-        criteria: ["Tylenol"]
+        criteria: [medications.TYLENOL]
     },
     {
         name: 'Nationwide',
         deniedStates: ['Iowa'],
-        criteria: ["Nyquil"]
+        criteria: [medications.NYQUIL]
     }
     ,
     {
         name: 'Blue Cross',
         deniedStates: ['Missouri'],
-        criteria: ["Ibuprofen"]
+        criteria: [medications.IBUPROFEN]
     }
     ,
     {
         name: 'Principal',
         deniedStates: [],
-        criteria: ["Tylenol"]
+        criteria: [medications.TYLENOL]
     }
 ]
