@@ -10,8 +10,12 @@
 .options {
   display:flex;
   justify-content: space-around;
-  border-bottom: 1px solid #cecece;
   padding: 15px 0px;
+}
+
+.followup {
+  display:block;
+  margin: 30px;
 }
 
 
