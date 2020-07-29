@@ -11,7 +11,7 @@ export default function Company({company, state, criteria}){
     const styles = isDenied ? 'red' : ''
 
     return (
-        <ListItem alignItems="flex-start" divider="true" className={styles}>
+        <ListItem alignItems="flex-start" divider={true} className={styles}>
             <ListItemIcon className="list-item">
             {icon}
             </ListItemIcon>
