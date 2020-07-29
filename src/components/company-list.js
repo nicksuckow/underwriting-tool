@@ -6,7 +6,7 @@ export default function Companies(props){
     return(
         <div>
             <ul>
-                {mapCompanies(companies, props.state, props.medication)}
+                {mapCompanies(companies, props.state, props.criteria)}
             </ul>
 
         </div>
@@ -15,8 +15,8 @@ export default function Companies(props){
 
 }
 
-function mapCompanies(companies, state, medication){
+function mapCompanies(companies, state, criteria){
     return companies.map(company => {
-        return <Company key={company.name} company={company} medication={medication} state={state} /> 
+        return <Company key={company.name} company={company} criteria={criteria} state={state} /> 
     })
 }

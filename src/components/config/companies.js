@@ -2,23 +2,23 @@ export default  [
     {
         name: 'Wellmark',
         deniedStates: [],
-        criteria: ["Tylenol"]
+        criteria["Tylenol"]
     },
     {
         name: 'Nationwide',
         deniedStates: ['Iowa'],
-        criteria: ["Nyquil"]
+        criteria["Nyquil"]
     }
     ,
     {
         name: 'Blue Cross',
         deniedStates: ['Missouri'],
-        criteria: ["Ibuprofen"]
+        criteria["Ibuprofen"]
     }
     ,
     {
         name: 'Principal',
         deniedStates: [],
-        criteria: ["Tylenol"]
+        criteria["Tylenol"]
     }
 ]
