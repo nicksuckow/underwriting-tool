@@ -14,7 +14,6 @@ export default function Criteria({selectedCriteria, setCriteria, setLastCriteria
         value={selectedCriteria}
         onChange={(event, newValue) => {
             setCriteria(newValue)
-            console.log('newValue', last(newValue))
             setLastCriteria(last(newValue))
             }}
         style={{ width: 300 }}

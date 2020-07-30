@@ -10,8 +10,6 @@ function App() {
   const [criteria, setCriteria] = useState([]); 
   const [lastCriteria, setLastCriteria] = useState();
 
-  console.log('lastCriteria', lastCriteria)
-
   return (
     <div className="App">
       <div className="options">
