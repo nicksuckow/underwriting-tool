@@ -13,7 +13,7 @@ export default function Company({company, state, criteria}){
     return (
         <ListItem alignItems="flex-start" divider={true} className={styles}>
             <ListItemIcon className="list-item">
-            {icon}
+                {icon}
             </ListItemIcon>
             <ListItemText primary={company.name} />
         </ListItem>

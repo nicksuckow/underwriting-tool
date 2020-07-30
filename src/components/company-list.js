@@ -5,12 +5,9 @@ import { List } from '@material-ui/core';
 
 export default function Companies(props){
     return(
-        <div>
-            <List>
-                {mapCompanies(companies, props.state, props.criteria)}
-            </List>
-        </div>
-
+        <List>
+            {mapCompanies(companies, props.state, props.criteria)}
+        </List>
     )
 }
 
