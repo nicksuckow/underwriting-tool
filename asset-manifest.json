@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/underwriting-tool/static/css/main.eb5db6c3.chunk.css",
+    "main.js": "/underwriting-tool/static/js/main.3d55b54e.chunk.js",
+    "main.js.map": "/underwriting-tool/static/js/main.3d55b54e.chunk.js.map",
+    "runtime-main.js": "/underwriting-tool/static/js/runtime-main.8bf578b9.js",
+    "runtime-main.js.map": "/underwriting-tool/static/js/runtime-main.8bf578b9.js.map",
+    "static/js/2.0c3beba8.chunk.js": "/underwriting-tool/static/js/2.0c3beba8.chunk.js",
+    "static/js/2.0c3beba8.chunk.js.map": "/underwriting-tool/static/js/2.0c3beba8.chunk.js.map",
+    "index.html": "/underwriting-tool/index.html",
+    "precache-manifest.819bbdbbdc5c019ac351d6f7bb942e8a.js": "/underwriting-tool/precache-manifest.819bbdbbdc5c019ac351d6f7bb942e8a.js",
+    "service-worker.js": "/underwriting-tool/service-worker.js",
+    "static/css/main.eb5db6c3.chunk.css.map": "/underwriting-tool/static/css/main.eb5db6c3.chunk.css.map",
+    "static/js/2.0c3beba8.chunk.js.LICENSE.txt": "/underwriting-tool/static/js/2.0c3beba8.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8bf578b9.js",
+    "static/js/2.0c3beba8.chunk.js",
+    "static/css/main.eb5db6c3.chunk.css",
+    "static/js/main.3d55b54e.chunk.js"
+  ]
+}
